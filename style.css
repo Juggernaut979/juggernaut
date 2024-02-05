@@ -1,14 +1,111 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;500;600;700;800;900&family=Urbanist:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;500;600;700;800;900&family=Urbanist:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --dark-color: #5d001e;
+  --color: #e3e2df;
+  --color-sec: #9a1750;
+}
 * {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: 0.05;
 }
 
 body {
   background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  margin: 0;
+  padding: 1rem;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Vollkorn", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--dark-color);
+}
+
+i {
+  color: var(--dark-color);
+  font-size: 1.2rem;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+.topNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: var(--dark-color);
+  justify-content: space-between;
+  padding: 0.1rem;
+  align-items: center;
+}
+
+.navTitle {
+  font-weight: 900;
+}
+
+.navTitle span {
+  font-weight: 400;
+}
+
+.topNavUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.topNavUl a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+.topNavUl a:hover {
+  text-decoration: overline;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5rem 0;
+  gap: 5rem;
+}
+
+.codingImg img {
+  border-radius: 2rem;
+  box-shadow: 0px 0px 5px var(--dark-color);
+}
+
+.about div a {
+  display: inline-block;
+  padding: 0.2rem 0;
+  transition: transform 200ms;
+}
+
+.about div a:hover {
+  transform: scale(1.2);
+}
+
+.scroll {
+  font-weight: 600;
+  color: var(--dark-color);
+  text-align: center;
+  width: 10rem;
+  margin: 3rem auto;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  box-shadow: 0px 0px 7px var(--dark-color);
 }
