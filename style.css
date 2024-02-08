@@ -186,7 +186,7 @@ a {
 }
 
 .projects h2 {
-  padding: 0 0 5rem;
+  padding: 0 0 3rem;
 }
 
 .projectsFlex {
@@ -215,4 +215,76 @@ a {
 
 .projects i {
   font-size: 2.5rem;
+}
+
+.contact h2,
+p,
+h3 {
+  text-align: center;
+}
+
+.contact h2 {
+  margin: 0;
+}
+
+.cFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin: 5rem 0 0;
+}
+
+.cFlex input {
+  width: 48%;
+  padding: 0.5rem;
+  border: 0.1rem solid var(--dark-color);
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.cFlex textarea {
+  width: 96%;
+  margin: 1rem 0 0;
+  padding: 0.5rem;
+  border: 0.1rem solid var(--dark-color);
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.cInfo {
+  background: var(--dark-color);
+  color: var(--color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.cInfo h3 {
+  color: var(--color);
+}
+
+.cInfo i {
+  color: var(--color);
+}
+
+button {
+  background: var(--dark-color);
+  color: var(--color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: box-shadow 200ms;
+}
+
+button i {
+  color: var(--color);
+}
+button:hover {
+  box-shadow: 0px 0px 10px var(--dark-color);
 }
