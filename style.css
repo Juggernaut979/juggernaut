@@ -16,18 +16,23 @@
 .gdBg {
   background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
   width: 100%;
-  height: 30rem;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-attachment: fixed;
   position: fixed;
   top: 0;
   z-index: -1;
 }
 
 body {
-  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
   margin: 0;
-  padding: 1rem;
-  background-attachment: fixed;
+  padding: 0;
   font-size: 1rem;
+}
+
+main {
+  padding: 1rem;
 }
 
 h1,
@@ -295,6 +300,7 @@ footer {
   gap: 2rem;
   margin: 10rem 0 0;
   color: var(--dark-color);
+  padding: 0 1rem;
 }
 
 footer section {
