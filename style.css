@@ -99,7 +99,7 @@ a {
 }
 
 .topNavUl a:hover,
-a:focus {
+.topNavUl a:focus {
   text-decoration: overline;
 }
 
