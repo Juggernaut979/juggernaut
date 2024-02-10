@@ -8,6 +8,7 @@ let topNavUl = document.getElementById("topNavUl");
 function show(params) {
   menuBtn.classList.toggle("show");
   menuCloseBtn.classList.toggle("show");
+  menuCloseBtn.classList.toggle("showClose");
   topNavUl.classList.toggle("show");
 }
 

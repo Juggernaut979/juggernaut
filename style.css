@@ -72,6 +72,7 @@ a {
 }
 
 .menuIcon {
+  display: none;
   cursor: pointer;
 }
 
@@ -353,6 +354,10 @@ a:focus {
 
   .show {
     display: none;
+  }
+
+  .showClose {
+    display: block;
   }
 
   .about div {
