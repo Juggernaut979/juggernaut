@@ -67,8 +67,12 @@ a {
   flex-wrap: wrap;
   color: var(--dark-color);
   justify-content: space-between;
-  padding: 0.1rem;
+  padding: 0.5rem 1rem;
   align-items: center;
+}
+
+.menuIcon {
+  cursor: pointer;
 }
 
 .navTitle {
@@ -85,6 +89,7 @@ a {
   padding: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .topNavUl a {
@@ -93,7 +98,8 @@ a {
   font-weight: 600;
 }
 
-.topNavUl a:hover {
+.topNavUl a:hover,
+a:focus {
   text-decoration: overline;
 }
 
@@ -103,6 +109,10 @@ a {
   align-items: center;
   gap: 5rem;
   padding: 5rem 0;
+}
+
+.home p {
+  margin: 0 0 2rem;
 }
 
 .flexDivide section {
@@ -121,7 +131,8 @@ a {
   transition: transform 200ms;
 }
 
-.home div a:hover {
+.home div a:hover,
+a:focus {
   transform: scale(1.2);
 }
 
@@ -290,7 +301,8 @@ button {
 button i {
   color: var(--color);
 }
-button:hover {
+button:hover,
+button:focus {
   box-shadow: 0px 0px 10px var(--dark-color);
 }
 
@@ -313,6 +325,63 @@ footer a {
   transition: transform 200ms;
 }
 
-footer a:hover {
+footer a:hover,
+a:focus {
   transform: scale(1.3);
+}
+
+/* Mobile View */
+@media only screen and (max-width: 760px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .home h2 {
+    text-align: center;
+  }
+
+  .topNavUl {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  .show {
+    display: none;
+  }
+
+  .about div {
+    flex-direction: column;
+  }
+
+  .flexDivide section {
+    width: 80%;
+  }
+
+  .projectsFlex {
+    flex-direction: column;
+  }
+
+  .pBox {
+    width: 80%;
+    margin: 0 auto 3rem;
+  }
+
+  .cFlex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .cBtn {
+    width: 6rem;
+    margin: 0 auto;
+  }
+  .cBtn button {
+    width: 100%;
+  }
 }

@@ -33,7 +33,16 @@
       <div class="navTitle">
         JUGGER<span>WEB</span> <i class="fi fi-tr-square-terminal"></i>
       </div>
-      <ul class="topNavUl">
+
+      <div id="menuCloseBtn" class="menuClose menuIcon show">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <div id="menuBtn" class="menuIcon menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <ul id="topNavUl" class="topNavUl show">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -178,7 +187,7 @@
           </section>
         </div>
 
-        <div>
+        <div class="cBtn">
           <button>Send <i class="fa-solid fa-paper-plane"></i></button>
         </div>
       </article>
@@ -207,5 +216,7 @@
 
       <div>&copy; JuggerWeb Service, 2024</div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
